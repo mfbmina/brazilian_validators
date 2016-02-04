@@ -10,5 +10,6 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/mfbmina/brazilian_validators"
   s.license = "MIT"
 
+  s.add_development_dependency "pry"
   s.add_development_dependency "rspec"
 end

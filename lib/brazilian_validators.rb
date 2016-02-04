@@ -1,3 +1,4 @@
 class BrazilianValidators
-  require "brazilian_validators/phone"
 end
+
+require "brazilian_validators/phone"
