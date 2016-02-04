@@ -64,7 +64,7 @@ class BrazilianValidators
     end
 
     def valid_number?
-      valid_mobile? || (@number.match(/\A[2-5]/) && @number.size == 8)
+      valid_mobile? || (!@number.match(/\A[2-5]/).nil? && @number.size == 8)
     end
 
     def remove_non_digits(string)

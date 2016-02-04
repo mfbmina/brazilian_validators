@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "brazilian_validators"
-  s.version = "0.0.1"
+  s.version = "1.0.1"
   s.date = "2016-01-23"
   s.summary = "Hola!"
   s.description = "It gives you a lot of useful validators for Brazillian documents or phones."
