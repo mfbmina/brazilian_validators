@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mfbmina/brazilian_validators.svg?branch=master)](https://travis-ci.org/mfbmina/brazilian_validators)
 # Brazilian Validators
 
 It gives you a lot of useful validators for Brazillian documents or phones.
