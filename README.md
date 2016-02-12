@@ -46,8 +46,8 @@ BrazilianValidators::Cpf.valid?('12345678909')
 ```
 
 ### Tips
-It will remove any non-digit from phone number and it will remove zeros if it starts the number.
-It will allow two CPF formats.XXX.XXX.XXX-XX or YYYYYYYYYYY.
+* It will remove any non-digit from phone number and it will remove zeros if it starts the number.
+* It will allow two CPF formats.XXX.XXX.XXX-XX or YYYYYYYYYYY.
 
 ### To-Do
 Features that are coming:
