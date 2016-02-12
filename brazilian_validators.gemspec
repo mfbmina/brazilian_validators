@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.files = ["lib/brazilian_validators.rb", "lib/brazilian_validators/phone.rb", "lib/brazilian_validators/cpf.rb"]
   s.homepage = "https://github.com/mfbmina/brazilian_validators"
   s.license = "MIT"
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.1.2'
 
   s.add_development_dependency "pry", '~> 0.10.3', '>= 0.10.3'
   s.add_development_dependency "rspec", '~> 3.4.0', '>= 3.4.0'
