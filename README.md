@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/mfbmina/brazilian_validators.svg?branch=master)](https://travis-ci.org/mfbmina/brazilian_validators)
 # Brazilian Validators
 
-It gives you a lot of useful validators for Brazillian documents or phones.
+It gives you a lot of useful validators for Brazillian phones or CPF. New features are coming!
 
 ### Installation
 You can run ```gem install 'brazilian_validators'```
@@ -33,12 +33,23 @@ or:
 BrazilianValidators::Phone.is_mobile?('11999999999')
 ```
 
+For CPF you can do:
+```
+cpf = BrazilianValidators::Cpf.new('12345678909')
+cpf.valid?
+```
+
+or just:
+
+```
+BrazilianValidators::Cpf.valid?('12345678909')
+```
+
 ### Tips
 It will remove any non-digit from phone number and it will remove zeros if it starts the number.
 
 ### To-Do
 Features that are coming:
-* CPF validation
 * CNPJ validation
 * CEP validation
 * ActiveRecord custom validations

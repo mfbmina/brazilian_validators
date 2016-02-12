@@ -65,6 +65,26 @@ describe BrazilianValidators::Phone do
     end
   end
 
+  describe "#self.is_mobile?" do
+    it "should return true when both validations are true" do
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid?).and_return(true)
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_mobile?).and_return(true)
+      expect(BrazilianValidators::Phone.is_mobile?('')).to be_truthy
+    end
+
+    it "should return false when is not valid" do
+      allow(phone).to receive(:valid?).and_return(false)
+      allow(phone).to receive(:valid_mobile?).and_return(true)
+      expect(BrazilianValidators::Phone.is_mobile?('')).to be_falsey
+    end
+
+    it "should return false when is not a mobile" do
+      allow(BrazilianValidators::Phone).to receive(:valid?).and_return(true)
+      allow(BrazilianValidators::Phone).to receive(:valid_mobile?).and_return(false)
+      expect(BrazilianValidators::Phone.is_mobile?('')).to be_falsey
+    end
+  end
+
   describe "#number" do
     it 'should return the initialized number' do
       expect(phone.number).to eq('999991231')
@@ -96,6 +116,26 @@ describe BrazilianValidators::Phone do
       allow(phone).to receive(:valid_area_code?).and_return(true)
       allow(phone).to receive(:valid_number?).and_return(false)
       expect(phone.valid?).to be_falsey
+    end
+  end
+
+  describe "#self.valid?" do
+    it "should return true when both validations are true" do
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_area_code?).and_return(true)
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_number?).and_return(true)
+      expect(BrazilianValidators::Phone.valid?('')).to be_truthy
+    end
+
+    it "should return false when area code is not valid" do
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_area_code?).and_return(false)
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_number?).and_return(true)
+      expect(BrazilianValidators::Phone.valid?('')).to be_falsey
+    end
+
+    it "should return false when number is not valid" do
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_area_code?).and_return(true)
+      allow_any_instance_of(BrazilianValidators::Phone).to receive(:valid_number?).and_return(false)
+      expect(BrazilianValidators::Phone.valid?('')).to be_falsey
     end
   end
 
