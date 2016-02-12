@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    brazilian_validators (0.0.1)
+    brazilian_validators (1.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -33,8 +33,8 @@ PLATFORMS
 
 DEPENDENCIES
   brazilian_validators!
-  pry
-  rspec
+  pry (~> 0.10.3)
+  rspec (~> 3.4.0)
 
 BUNDLED WITH
    1.10.6
