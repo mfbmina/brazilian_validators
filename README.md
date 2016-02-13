@@ -21,7 +21,7 @@ or just:
 BrazilianValidators::Phone.valid?('11999999999')
 ```
 
-You can check if it is an mobile number, like:
+You can check if it is a mobile number, like:
 ```
 phone = BrazilianValidators::Phone.new('11999999999')
 phone.is_mobile?
@@ -58,7 +58,8 @@ BrazilianValidators::Cnpj.valid?('73.538.343/0001-88')
 ```
 
 ### Tips
-It will remove any non-digit from phone number and it will remove zeros if it starts the number.
+* It will remove any non-digit from phone number and it will remove zeros if it starts the number.
+* It will allow two CPF formats.XXX.XXX.XXX-XX or YYYYYYYYYYY.
 
 ### To-Do
 Features that are coming:
