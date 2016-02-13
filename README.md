@@ -59,7 +59,8 @@ BrazilianValidators::Cnpj.valid?('73.538.343/0001-88')
 
 ### Tips
 * It will remove any non-digit from phone number and it will remove zeros if it starts the number.
-* It will allow two CPF formats.XXX.XXX.XXX-XX or YYYYYYYYYYY.
+* It will allow two CPF formats: XXX.XXX.XXX-XX or YYYYYYYYYYY.
+* It will allow two CNPJ formats: XX.XXX.XXX/XXXX-XX or YYYYYYYYYYYYYY.
 
 ### To-Do
 Features that are coming:
