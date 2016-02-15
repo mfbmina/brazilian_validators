@@ -9,58 +9,7 @@ You can run ```gem install 'brazilian_validators'```
 But, if you wanna use Bundler just add ```gem 'brazilian_validators'``` into your Gemfile and run ```bundle install```.
 
 ### Usage
-You can do:
-```
-phone = BrazilianValidators::Phone.new('11999999999')
-phone.valid?
-```
-
-or just:
-
-```
-BrazilianValidators::Phone.valid?('11999999999')
-```
-
-You can check if it is a mobile number, like:
-```
-phone = BrazilianValidators::Phone.new('11999999999')
-phone.is_mobile?
-```
-
-or:
-
-```
-BrazilianValidators::Phone.is_mobile?('11999999999')
-```
-
-For CPF you can do:
-```
-cpf = BrazilianValidators::Cpf.new('12345678909')
-cpf.valid?
-```
-
-or just:
-
-```
-BrazilianValidators::Cpf.valid?('12345678909')
-```
-
-For CNPJ you can do:
-```
-cnpj = BrazilianValidators::Cnpj.new('73.538.343/0001-88')
-cnpj.valid?
-```
-
-or just:
-
-```
-BrazilianValidators::Cnpj.valid?('73.538.343/0001-88')
-```
-
-### Tips
-* It will remove any non-digit from phone number and it will remove zeros if it starts the number.
-* It will allow two CPF formats: XXX.XXX.XXX-XX or YYYYYYYYYYY.
-* It will allow two CNPJ formats: XX.XXX.XXX/XXXX-XX or YYYYYYYYYYYYYY.
+Please check [examples!](https://www.github.com/mfbmina/brazilian_validators/tree/master/examples/)
 
 ### To-Do
 Features that are coming:
@@ -76,4 +25,4 @@ Or just:
 * Create a new issue
 
 ### Mainteners
-* [@mfbmina](www.github.com/mfbmina) - Matheus Mina
+* [@mfbmina](https://www.github.com/mfbmina) - Matheus Mina
