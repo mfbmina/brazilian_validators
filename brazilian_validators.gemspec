@@ -1,13 +1,13 @@
 Gem::Specification.new do |s|
   s.name = "brazilian_validators"
-  s.version = "1.2.0"
-  s.date = "2016-02-13"
+  s.version = "1.3.0"
+  s.date = "2016-02-15"
   s.summary = "Brazillian Validators, gives you some validations!"
   s.description = "It gives you a lot of useful validators for Brazillian documents or phones."
   s.authors = ["Matheus Mina"]
   s.email = "mfbmina@gmail.com"
   s.files = ["lib/brazilian_validators.rb", "lib/brazilian_validators/phone.rb", "lib/brazilian_validators/cpf.rb",
-            "lib/brazilian_validators/cnpj.rb"]
+            "lib/brazilian_validators/cnpj.rb", "lib/brazilian_validators/cep.rb"]
   s.homepage = "https://github.com/mfbmina/brazilian_validators"
   s.license = "MIT"
   s.required_ruby_version = '>= 2.1.2'

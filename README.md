@@ -13,11 +13,13 @@ Please check [examples!](https://www.github.com/mfbmina/brazilian_validators/tre
 
 ### To-Do
 Features that are coming:
-* CEP validation
+* Email validation
+* Driver license
+* License plate
 * ActiveRecord custom validations
 
 ### Contributing
-If you wanna improve something or create new features,:fell free for:
+If you wanna improve something or create new features, fell free for:
 * Forking this project
 * Create a new pull request
 
