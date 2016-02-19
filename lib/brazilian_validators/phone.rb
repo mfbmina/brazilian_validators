@@ -1,7 +1,7 @@
 class BrazilianValidators
   class Phone
     def initialize(number = '')
-      number = remove_non_digits(number)
+      number = remove_non_digits(number.to_s)
       @area_code = number.slice!(0..1)
       @number = number
     end
@@ -28,12 +28,12 @@ class BrazilianValidators
       @number = number
     end
 
-    def self.is_mobile?(number)
+    def self.is_mobile?(number = '')
       phone = new(number)
       phone.is_mobile?
     end
 
-    def self.valid?(number)
+    def self.valid?(number = '')
       phone = new(number)
       phone.valid?
     end

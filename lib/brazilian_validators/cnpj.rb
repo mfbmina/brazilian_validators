@@ -2,6 +2,7 @@ class BrazilianValidators
   class Cnpj
     def initialize(document)
       raise(StandardError, "Not a valid cnpj format") unless document.match(/[0-9]{2}\.[0-9]{3}\.[0-9]{3}\/[0-9]{4}\-[0-9]{2}|\d{14}/)
+      document = document.to_s
       document.gsub!(/\D/, "")
       @digits = document[0..11]
       @first_digit_checker = document[12]
@@ -14,7 +15,7 @@ class BrazilianValidators
       first_digit == @first_digit_checker.to_i && second_digit == @second_digit_checker.to_i
     end
 
-    def self.valid?(document)
+    def self.valid?(document = '')
       BrazilianValidators::Cnpj.new(document).valid?
     end
 

@@ -1,5 +1,5 @@
 require "bundler/setup"
-Bundler.setup
+Bundler.setup 
 
 require "brazilian_validators"
 
