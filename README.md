@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/mfbmina/brazilian_validators.svg?branch=master)](https://travis-ci.org/mfbmina/brazilian_validators)
 # Brazilian Validators
 
-It gives you a lot of useful validators for Brazillian phones, CPF or CNPJ. New features are coming!
+It gives you a lot of useful validators for Brazillian phones, CPF or CNPJ. Allow you to use ActiveModel validations. New features are coming!
 
 ### Installation
 You can run ```gem install 'brazilian_validators'```
@@ -16,7 +16,6 @@ Features that are coming:
 * Email validation
 * Driver license
 * License plate
-* ActiveRecord custom validations
 
 ### Contributing
 If you wanna improve something or create new features, fell free for:

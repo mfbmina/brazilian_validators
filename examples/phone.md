@@ -22,4 +22,9 @@ or:
 BrazilianValidators::Phone.is_mobile?('11999999999')
 ```
 
+If you use Rails or ActiveModel, maybe you wanna some validators, so add to your model:
+``` validates :field_name, phone: true ```
+or
+``` validates :field_name, mobile: true ```
+
 Please note that will remove any non-digit from phone number and it will remove zeros if it starts the number.
